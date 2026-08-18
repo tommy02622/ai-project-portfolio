@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="tommy02622의 AI 프로젝트 포트폴리오 - RAG 평가, 탄소 인지형 시맨틱 캐시, 온디바이스 컴퓨터 비전 프로젝트."
+    />
+    <meta name="author" content="tommy02622" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="AI Project Portfolio | tommy02622" />
+    <meta property="og:url" content="https://tommy02622.github.io/ai-project-portfolio/" />
+    <meta
+      property="og:description"
+      content="RAG 검색·평가와 컴퓨터 비전 모델 학습 프로젝트의 개인 기여와 검증 결과를 정리한 포트폴리오."
+    />
+    <meta name="theme-color" content="#174b3d" />
+    <title>AI Project Portfolio | tommy02622</title>
+    <link rel="canonical" href="https://tommy02622.github.io/ai-project-portfolio/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#projects">프로젝트로 이동</a>
+
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="페이지 처음으로">
+        <span class="wordmark-mark">01</span>
+        <span>TOMMY02622 · AI PORTFOLIO</span>
+      </a>
+      <nav aria-label="주요 메뉴">
+        <a href="#projects">Projects</a>
+        <a href="#approach">Approach</a>
+        <a href="#highlights">Highlights</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="intro" aria-labelledby="intro-title">
+        <div class="intro-copy">
+          <p class="portfolio-owner">TOMMY02622 · AI/LLM &amp; COMPUTER VISION</p>
+          <h1 id="intro-title">AI 프로젝트<br />포트폴리오</h1>
+          <p class="intro-summary">
+            RAG 검색·평가부터 데이터 라벨링, 객체 탐지 모델 학습, 사용자 화면 구현까지
+            세 프로젝트에서 직접 맡은 작업과 검증 결과를 정리했습니다.
+          </p>
+          <div class="focus-list" aria-label="핵심 분야">
+            <span>Python · LangChain · Qdrant</span>
+            <span>YOLOv8 · Data Labeling</span>
+            <span>Evaluation · Carbon Monitoring</span>
+          </div>
+          <div class="intro-actions" aria-label="포트폴리오 관련 링크">
+            <a class="text-link" href="https://github.com/tommy02622" target="_blank" rel="noreferrer">
+              GitHub Profile <i data-lucide="code-2" aria-hidden="true"></i>
+            </a>
+            <a class="text-link pdf-action" href="output/pdf/AI_Project_Portfolio_tommy02622.pdf" download>
+              PDF Download <i data-lucide="download" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <aside class="portfolio-preview" aria-label="대표 프로젝트 미리보기">
+          <div class="portfolio-preview-header">
+            <span>SELECTED WORK · 3 PROJECTS</span>
+            <strong>RAG / VISION / ON-DEVICE</strong>
+          </div>
+          <div class="portfolio-preview-grid">
+            <a class="preview-project preview-project-primary" href="#ecocache-project">
+              <div class="preview-project-image">
+                <img src="assets/ecocache-chat.png" alt="EcoCache 학사 도우미 사용자 화면" />
+              </div>
+              <div class="preview-project-copy"><span>01</span><strong>EcoCache</strong><small>RAG · Evaluation · Web UI</small></div>
+            </a>
+            <a class="preview-project" href="#safety-project">
+              <div class="preview-project-image">
+                <img src="assets/safety-detection.jpg" alt="산업 안전 위험 요소 탐지 결과" />
+              </div>
+              <div class="preview-project-copy"><span>02</span><strong>Industrial Safety</strong><small>YOLO · On-device AI</small></div>
+            </a>
+            <a class="preview-project" href="#kickboard-project">
+              <div class="preview-project-image preview-project-image-contain">
+                <img src="assets/kickboard-training.png" alt="킥보드 탐지 모델 학습 곡선" />
+              </div>
+              <div class="preview-project-copy"><span>03</span><strong>Kickboard Detection</strong><small>Dataset · Labeling · YOLO</small></div>
+            </a>
+          </div>
+        </aside>
+      </section>
+
+      <section class="snapshot" aria-label="포트폴리오 요약">
+        <div>
+          <span class="snapshot-label">PROJECTS</span>
+          <strong>3</strong>
+          <p>RAG · 산업 안전 · 킥보드 탐지</p>
+        </div>
+        <div>
+          <span class="snapshot-label">AWARDS</span>
+          <strong>5</strong>
+          <p>AI·탄소중립 프로젝트 및 콘텐츠</p>
+        </div>
+        <div>
+          <span class="snapshot-label">RESEARCH</span>
+          <strong>1</strong>
+          <p>EcoCache 후속 연구 논문 작성</p>
+        </div>
+      </section>
+
+      <section id="projects" class="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="eyebrow">SELECTED WORK</p>
+          <h2 id="projects-title">프로젝트</h2>
+          <p>문제 정의부터 구현, 평가, 다음 개선 단계까지 한 흐름으로 정리했습니다.</p>
+        </div>
+
+        <article id="ecocache-project" class="project project-primary">
+          <div class="project-index" aria-hidden="true">01</div>
+          <div class="project-body">
+            <div class="project-heading">
+              <div>
+                <p class="project-type">RAG · SEMANTIC CACHE · EVALUATION · WEB UI</p>
+                <h3>EcoCache</h3>
+              </div>
+              <span class="award-badge">2026 우수상</span>
+            </div>
+            <p class="project-lead">
+              교내 공지와 홍보 게시물을 검색 가능한 지식베이스로 만들고, 반복·유사 질의에는
+              QA 캐시를 우선 적용하는 학사 도우미를 구현했습니다. 검색·탄소 평가 결과를 웹 UI로
+              연결하고, 실험 결과를 바탕으로 후속 논문을 작성했습니다.
+            </p>
+            <div class="contribution" aria-label="EcoCache 개인 기여도">
+              <div class="contribution-label">
+                <i data-lucide="user-round-check" aria-hidden="true"></i>
+                <span>MY CONTRIBUTION</span>
+              </div>
+              <div class="contribution-copy">
+                <strong>4인 팀 · RAG 및 평가 실험 담당</strong>
+                <p>RAG 검색 구조를 구현하고 평가 질의 실험, 정확도 계산, CIASC alpha 값 탐색을 직접 수행했습니다. 발표 근거로 활용할 LLM 연산·탄소배출 절감 가능성 조사와 실험 결과 정리도 담당했습니다.</p>
+              </div>
+            </div>
+            <div class="project-grid">
+              <div>
+                <h4>Problem</h4>
+                <p>공지에 흩어진 신청 기간, 대상, 절차를 학생이 매번 직접 찾아야 했습니다.</p>
+              </div>
+              <div>
+                <h4>Implementation</h4>
+                <p>BGE-m3-ko 임베딩과 Qdrant를 사용해 QA 우선 검색 후 문서 검색으로 보완하는 2단계 검색 구조를 구현했습니다.</p>
+              </div>
+              <div>
+                <h4>Retrieval Tuning</h4>
+                <p>50문항에서 top_k·threshold·chunk를 비교해 Top-3 정확도 90.48%, 오답 캐시 0건을 기록한 설정을 선택했습니다.</p>
+              </div>
+              <div>
+                <h4>Service Validation</h4>
+                <p>25문항에서 출처 정확도 24/25, 문서 검색 적중 20/21을 기록하고 retrieval 배치 CO2 0.3852g을 측정했습니다.</p>
+              </div>
+              <div>
+                <h4>Product UI</h4>
+                <p>학사 질의응답과 모델 선택, 캐시 상태, 탄소·비용 영향을 확인할 수 있는 사용자 화면을 구현했습니다.</p>
+              </div>
+              <div>
+                <h4>Research Output</h4>
+                <p>검색 품질과 CIASC alpha별 정확도·탄소배출 비교 실험을 정리해 후속 연구 논문을 작성했습니다.</p>
+              </div>
+            </div>
+            <div class="project-actions">
+              <a class="text-link" href="https://github.com/tommy02622/EcoCache" target="_blank" rel="noreferrer">
+                GitHub <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+              </a>
+              <a class="text-link" href="https://github.com/tommy02622/EcoCache/blob/main/README.md" target="_blank" rel="noreferrer">
+                Technical README <i data-lucide="file-text" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <figure class="project-media experiment-media">
+            <div class="experiment-media-title">
+              <span>VALIDATION SNAPSHOT</span>
+              <strong>Retrieval, cache, and carbon evaluation</strong>
+            </div>
+            <div class="experiment-media-results">
+              <div>
+                <span>25-QUERY SERVICE TEST</span>
+                <strong>96.0%</strong>
+                <p>Source accuracy · 24 / 25</p>
+              </div>
+              <div>
+                <span>DOCUMENT FALLBACK</span>
+                <strong>95.2%</strong>
+                <p>Hit rate · 20 / 21</p>
+              </div>
+            </div>
+            <div class="experiment-comparison">
+              <p>50-QUERY CARBON-ADAPTIVE EVALUATION</p>
+              <div><span>B2 fixed threshold</span><strong>68.0%</strong><em>1.1268 g CO2</em></div>
+              <div><span>CIASC alpha=0.50</span><strong>92.0%</strong><em>0.9246 g CO2</em></div>
+            </div>
+            <p class="experiment-method-note">Retrieval-only experiments; CO2 was measured on an RTX 3050 laptop GPU under a fixed CI condition.</p>
+            <div class="ecocache-ui-gallery" aria-label="EcoCache 사용자 화면">
+              <div>
+                <a href="assets/ecocache-chat.png" target="_blank" rel="noreferrer" aria-label="EcoCache 학사 도우미 화면 크게 보기">
+                  <img src="assets/ecocache-chat.png" alt="EcoCache SW중심대학 학사 도우미 질의응답 화면" loading="lazy" />
+                </a>
+                <p>학사 질의응답 · 캐시 상태 · 모델 선택</p>
+              </div>
+              <div>
+                <a href="assets/ecocache-impact-dashboard.png" target="_blank" rel="noreferrer" aria-label="EcoCache 탄소 및 비용 비교 화면 크게 보기">
+                  <img src="assets/ecocache-impact-dashboard.png" alt="EcoCache 프로젝트의 탄소 영향과 비용 절감 비교 화면" loading="lazy" />
+                </a>
+                <p>탄소 영향 · 비용 절감 · 비교 결과</p>
+              </div>
+            </div>
+            <figcaption>EcoCache evaluation evidence and service interfaces</figcaption>
+          </figure>
+        </article>
+
+        <article id="safety-project" class="project project-tertiary">
+          <div class="project-index" aria-hidden="true">02</div>
+          <div class="project-body">
+            <div class="project-heading">
+              <div>
+                <p class="project-type">COMPUTER VISION · YOLO · ON-DEVICE AI</p>
+                <h3>Industrial Safety Vision</h3>
+              </div>
+              <span class="award-badge">2025 최우수상</span>
+            </div>
+            <p class="project-lead">
+              건설 현장의 위험 요소와 작업자·중장비 상황을 탐지하기 위해 데이터셋을 구성하고 YOLOv8 기반
+              탐지·세그멘테이션 모델을 구현한 온디바이스 AI 안전관리 프로젝트입니다.
+            </p>
+            <div class="contribution" aria-label="Industrial Safety Vision 개인 기여도">
+              <div class="contribution-label">
+                <i data-lucide="user-round-check" aria-hidden="true"></i>
+                <span>MY CONTRIBUTION</span>
+              </div>
+              <div class="contribution-copy">
+                <strong>프로젝트 구성 및 기술 구현 전반 담당</strong>
+                <p>프로젝트 구조 설계부터 데이터셋 탐색·구성, YOLOv8 모델 학습, 이미지 탐지 프로그램 구현과 결과 검증까지 수행했습니다. 발표자료 제작과 최종 발표를 제외한 기술 작업 전반을 담당했습니다.</p>
+              </div>
+            </div>
+            <div class="vision-flow" aria-label="프로젝트 구현 흐름">
+              <div><span>01</span><strong>Data</strong><p>안전 관련 이미지 약 12만 장을 바탕으로 데이터셋 구성·라벨링</p></div>
+              <div><span>02</span><strong>Model</strong><p>YOLOv8 기반 위험 탐지·세그멘테이션<br />모델을 학습·튜닝</p></div>
+              <div><span>03</span><strong>Scenarios</strong><p>개구부·불량 덮개·난간 미설치와 작업자 위험 구역을 탐지</p></div>
+              <div><span>04</span><strong>Device</strong><p>Orion Board용 RKNN 변환과 온디바이스 탑재를 시도</p></div>
+            </div>
+            <div class="safety-evidence" aria-label="산업 안전 비전 프로젝트 결과">
+              <figure>
+                <img src="assets/safety-detection.jpg" alt="건설 현장 위험 덮개를 cover_bad로 탐지하고 세그멘테이션한 YOLOv8 결과" loading="lazy" />
+                <figcaption>Test output / hazardous cover segmentation</figcaption>
+              </figure>
+              <figure>
+                <img src="assets/safety-labels.jpg" alt="산업 안전 데이터셋의 객체 클래스별 라벨 분포" loading="lazy" />
+                <figcaption>Training evidence / label distribution</figcaption>
+              </figure>
+            </div>
+            <div class="project-actions">
+              <a class="text-link" href="https://github.com/tommy02622/Smart-Construction-Safety" target="_blank" rel="noreferrer">
+                GitHub <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article id="kickboard-project" class="project project-tertiary project-kickboard">
+          <div class="project-index" aria-hidden="true">03</div>
+          <div class="project-body">
+            <div class="project-heading">
+              <div>
+                <p class="project-type">YOLOV8 · DATA LABELING · ON-DEVICE AI</p>
+                <h3>Kickboard Safety Detection</h3>
+              </div>
+              <span class="status-badge">2024 아카데미 프로젝트</span>
+            </div>
+            <p class="project-lead">
+              전동킥보드의 헬멧 미착용과 2인 이상 탑승을 탐지하기 위해 데이터를 구성·라벨링하고,
+              YOLOv8m 기반 5개 클래스 객체 탐지 모델을 학습한 초기 컴퓨터 비전 프로젝트입니다.
+            </p>
+            <div class="contribution" aria-label="Kickboard Safety Detection 개인 기여도">
+              <div class="contribution-label">
+                <i data-lucide="user-round-check" aria-hidden="true"></i>
+                <span>MY CONTRIBUTION</span>
+              </div>
+              <div class="contribution-copy">
+                <strong>2인 팀 · 데이터 수집·라벨링·모델 학습 담당</strong>
+                <p>팀원 1명과 함께 학습용 킥보드 이미지를 수집하고, 수천 장 규모의 데이터 라벨링을 수행했습니다. 정리한 데이터셋을 바탕으로 YOLO 모델 학습까지 담당했습니다.</p>
+              </div>
+            </div>
+            <div class="kickboard-metrics" aria-label="킥보드 탐지 모델 핵심 지표">
+              <div><span>PRECISION</span><strong>92.55%</strong><p>epoch 50 validation</p></div>
+              <div><span>RECALL</span><strong>90.51%</strong><p>epoch 50 validation</p></div>
+              <div><span>mAP@50</span><strong>92.96%</strong><p>5-class validation</p></div>
+              <div><span>mAP@50-95</span><strong>63.68%</strong><p>5-class validation</p></div>
+            </div>
+            <div class="inference-output" aria-label="실제 노트북 추론 출력">
+              <div class="inference-output-heading">
+                <span>NOTEBOOK INFERENCE OUTPUT</span>
+                <strong>Single-image detection</strong>
+              </div>
+              <code>448x640&nbsp;&nbsp;1 more-than-two, 3 persons, 2 scooters</code>
+              <div class="inference-output-meta">
+                <span>preprocess 2.2ms</span>
+                <span>inference 26.1ms</span>
+                <span>rule output true</span>
+              </div>
+            </div>
+            <div class="safety-evidence kickboard-evidence" aria-label="킥보드 탐지 모델 학습 결과">
+              <figure>
+                <img src="assets/kickboard-confusion.png" alt="헬멧 미착용, 헬멧 착용, 2인 이상 탑승, 1인 탑승, 기타 클래스의 정규화 혼동행렬" loading="lazy" />
+                <figcaption>Final 5-class run / normalized confusion matrix</figcaption>
+              </figure>
+              <figure>
+                <img src="assets/kickboard-training.png" alt="50회 학습 동안 손실 감소와 정밀도, 재현율, mAP 상승을 보여주는 YOLOv8 학습 곡선" loading="lazy" />
+                <figcaption>YOLOv8m · 50 epochs · 640px · batch 16</figcaption>
+              </figure>
+            </div>
+            <div class="project-actions">
+              <a class="text-link" href="https://github.com/tommy02622/Kickboard" target="_blank" rel="noreferrer">
+                GitHub <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section id="approach" class="approach" aria-labelledby="approach-title">
+        <div class="section-heading compact">
+          <p class="eyebrow">HOW I WORK</p>
+          <h2 id="approach-title">구현을 끝내지 않고 검증까지</h2>
+        </div>
+        <ol class="approach-list">
+          <li><span>01</span><div><h3>문제와 사용자 정의</h3><p>기능부터 시작하기보다, 누구의 어떤 탐색·운영 문제를 줄일지 먼저 정리합니다.</p></div></li>
+          <li><span>02</span><div><h3>구조와 책임 분리</h3><p>데이터·검색·생성·API·측정 모듈을 나눠 변경과 확장에 대응합니다.</p></div></li>
+          <li><span>03</span><div><h3>수치로 확인</h3><p>정확도, 적중률, 지연 시간, 비용·탄소 지표로 구현 결과를 확인합니다.</p></div></li>
+        </ol>
+      </section>
+
+      <section id="highlights" class="highlights" aria-labelledby="highlights-title">
+        <div class="section-heading compact">
+          <p class="eyebrow">RECOGNITION</p>
+          <h2 id="highlights-title">수상 및 활동</h2>
+        </div>
+        <div class="highlights-list">
+          <div><time>2026</time><p>탄소중립 INNOVATION ACADEMY 우수상</p><span>EcoCache / RAG answer cache</span></div>
+          <div><time>2025</time><p>탄소중립 INNOVATION ACADEMY 최우수상</p><span>Industrial Safety Vision</span></div>
+          <div><time>2025</time><p>생성형 AI 활용 쇼츠 공모전 입상</p><span>On-device AI and carbon neutrality</span></div>
+          <div><time>2025-2026</time><p>SW중심대학 에세이 공모전 장려상 2회</p><span>Learning, projects, and career narrative</span></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p><strong>tommy02622</strong> · AI Project Portfolio</p>
+      <a href="#top">Back to top <i data-lucide="arrow-up" aria-hidden="true"></i></a>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
